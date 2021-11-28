@@ -1,0 +1,154 @@
+body {
+  min-height: 100vh;
+  margin: 0px;
+}
+
+.conteiner {
+  background-color: #34495E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  padding: 5px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.conteiner .caja {
+  background-color: #EC7063;
+  width: 150px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.conteiner .caja.tre {
+  background-color: #F4D03F;
+  -webkit-animation-name: radio3;
+          animation-name: radio3;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.conteiner .caja.dos {
+  background-color: #0066FF;
+  -webkit-animation-name: radio2;
+          animation-name: radio2;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.conteiner .caja.uno {
+  background-color: red;
+  -webkit-animation-name: radio1;
+          animation-name: radio1;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.conteiner .fondo {
+  color: white;
+  position: absolute;
+  top: 40%;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+@-webkit-keyframes radio1 {
+  50% {
+    background-color: red;
+    height: 150px;
+    -webkit-transform: translateY(400px);
+            transform: translateY(400px);
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 50px 30px -15px red;
+            box-shadow: 0px 50px 30px -15px red;
+  }
+}
+
+@keyframes radio1 {
+  50% {
+    background-color: red;
+    height: 150px;
+    -webkit-transform: translateY(400px);
+            transform: translateY(400px);
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 50px 30px -15px red;
+            box-shadow: 0px 50px 30px -15px red;
+  }
+}
+
+@-webkit-keyframes radio2 {
+  50% {
+    background-color: blue;
+    height: 150px;
+    -webkit-transform: translateY(400px);
+            transform: translateY(400px);
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 50px 30px -15px blue;
+            box-shadow: 0px 50px 30px -15px blue;
+  }
+}
+
+@keyframes radio2 {
+  50% {
+    background-color: blue;
+    height: 150px;
+    -webkit-transform: translateY(400px);
+            transform: translateY(400px);
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 50px 30px -15px blue;
+            box-shadow: 0px 50px 30px -15px blue;
+  }
+}
+
+@-webkit-keyframes radio3 {
+  50% {
+    background-color: #F4D03F;
+    height: 150px;
+    -webkit-transform: translateY(400px);
+            transform: translateY(400px);
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 50px 30px -15px yellow;
+            box-shadow: 0px 50px 30px -15px yellow;
+  }
+}
+
+@keyframes radio3 {
+  50% {
+    background-color: #F4D03F;
+    height: 150px;
+    -webkit-transform: translateY(400px);
+            transform: translateY(400px);
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 50px 30px -15px yellow;
+            box-shadow: 0px 50px 30px -15px yellow;
+  }
+}
+/*# sourceMappingURL=style.css.map */

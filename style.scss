@@ -1,0 +1,100 @@
+body{
+  
+    min-height: 100vh;
+    margin: 0px;
+}
+
+.conteiner{
+    background-color: #34495E;
+    display: flex;
+    min-height:100vh;
+    padding: 5px;
+    justify-content: space-around;
+    
+    
+    .caja{
+        background-color: #EC7063;
+        width:150px;
+        height: 150px;
+       
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: #fff;
+       letter-spacing: 3px;
+       font-weight:bold; 
+
+    }
+    .caja.tre{
+        background-color:#F4D03F ;
+        animation-name: radio3;
+        animation-duration: 10s;
+        animation-delay: 3s;
+        animation-iteration-count: infinite;
+    }
+    .caja.dos{
+        background-color:#0066FF ;
+        animation-name: radio2;
+        animation-duration: 10s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+
+    }
+    .caja.uno{
+        background-color: red;
+        animation-name: radio1;
+        animation-duration: 10s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+    }
+     
+    .fondo
+    {
+        color: white;
+        position:absolute;
+        top: 40%;
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 5px;
+        background-color:rgba($color: #000000, $alpha: 0.4);
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+
+    }
+
+}
+
+
+@keyframes radio1{
+
+    50%{background-color: red;
+        height: 150px;
+        transform: translateY(400px); 
+        border-radius: 50%;
+        box-shadow: 0px 50px 30px -15px red; 
+          
+              
+    }
+}
+@keyframes radio2{
+
+    50%{background-color: blue;
+        height: 150px;
+        transform: translateY(400px); 
+        border-radius: 50%;
+        box-shadow: 0px 50px 30px -15px blue; 
+        
+              
+    }
+}
+@keyframes radio3 {
+
+    50%{background-color: #F4D03F;
+        height: 150px;
+        transform: translateY(400px); 
+        border-radius: 50%;
+        box-shadow: 0px 50px 30px -15px yellow ;
+         
+    }
+}
+
